@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&family=Nunito:wght@400;500;600;700;800&family=RobotoSlab:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap");
+.projects {
+  background: rgb(130, 130, 130);
+  background: linear-gradient(0deg, rgb(130, 130, 130) 0%, rgba(40, 40, 40, 0.9332107843) 100%);
+}
+.projects .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .center .my__projects {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.projects .center .my__projects .link__site {
+  width: 45%;
+  box-shadow: 0 0 10px #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+.projects .center .my__projects .link__site img {
+  width: 100%;
+  transition: 0.4s;
+}
+.projects .center .my__projects .link__site a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.projects .center .my__projects .link__site strong {
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-family: "Roboto Slab";
+  color: #fff;
+  margin: 20px 0 7px 0;
+}
+.projects .center .my__projects .link__site span {
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: "Roboto Slab";
+  color: #000;
+}
+.projects .center .my__projects .link__site:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 425px) {
+  .projects .center {
+    height: auto;
+  }
+  .projects .center .my__projects {
+    flex-direction: column;
+  }
+  .projects .center .my__projects .link__site {
+    width: 100%;
+  }
+}/*# sourceMappingURL=projects.css.map */

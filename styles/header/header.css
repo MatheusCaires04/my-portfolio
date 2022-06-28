@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&family=Nunito:wght@400;500;600;700;800&family=RobotoSlab:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap");
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(40, 40, 40, 0.335);
+  position: fixed;
+  display: flex;
+  z-index: 99;
+  transition: 0.3s;
+}
+.header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.header .menu .logo {
+  font-family: "Roboto Slab";
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 0 30px black;
+}
+.header .menu .menu__hamburguer {
+  display: none;
+}
+.header .menu .menu__list {
+  display: inline-flex;
+  gap: 60px;
+}
+.header .menu .menu__list .menu__link {
+  padding: 10px 0;
+  display: flex;
+}
+.header .menu .menu__list .menu__link:hover .link {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+.header .menu .menu__list .menu__link .link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.header.change__bg {
+  background-color: rgba(40, 40, 40, 0.785);
+}
+.header.change__bg .logo {
+  text-shadow: 0 0 30px rgb(130, 130, 130);
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: rgba(40, 40, 40, 0.785);
+  }
+  .header .menu .menu__list {
+    position: absolute;
+    left: 0;
+    top: -50vh;
+    width: 100%;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0;
+    background-color: rgba(40, 40, 40, 0.785);
+    transition: 0.5s;
+  }
+  .header .menu .menu__list .menu__link .link {
+    font-size: 1.2rem;
+  }
+  .header .menu .menu__list.active {
+    top: 80px;
+  }
+  .header .menu.center {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .header .menu.center .menu__hamburguer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  .header .menu.center .menu__hamburguer .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: 0.5s;
+  }
+  .header .menu.center .menu__hamburguer.menu__close {
+    position: relative;
+  }
+  .header .menu.center .menu__hamburguer.menu__close .line1,
+.header .menu.center .menu__hamburguer.menu__close .line3 {
+    position: absolute;
+  }
+  .header .menu.center .menu__hamburguer.menu__close .line2 {
+    opacity: 0;
+  }
+  .header .menu.center .menu__hamburguer.menu__close .line1 {
+    transform: rotate(50deg);
+  }
+  .header .menu.center .menu__hamburguer.menu__close .line3 {
+    transform: rotate(-50deg);
+  }
+}/*# sourceMappingURL=header.css.map */

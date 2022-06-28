@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&family=Nunito:wght@400;500;600;700;800&family=RobotoSlab:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap");
+.about {
+  height: 100vh;
+  background: rgb(130, 130, 130);
+  background: linear-gradient(180deg, rgb(130, 130, 130) 0%, rgba(40, 40, 40, 0.9332107843) 100%);
+}
+.about .center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.about .center .my__description {
+  display: flex;
+  padding: 20px 0;
+}
+.about .center .my__description .description__photo {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .center .my__description .description__photo .my__photo {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about .center .my__description .description__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.639);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+}
+.about .center .my__description .description__text span {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Nunito";
+}
+.about .center .my__description .description__text p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Nunito";
+}
+.about .center .my__description .description__text .skills {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.about .center .my__description .description__text .skills img {
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  .about .center .my__description {
+    gap: 20px;
+  }
+  .about .center .my__description .description__photo {
+    width: 200px;
+    justify-content: flex-start;
+  }
+  .about .center .my__description .description__text span {
+    font-size: 1.7rem;
+  }
+  .about .center .my__description .description__text p {
+    font-size: 1rem;
+  }
+  .about .center .my__description .description__text .skills img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .about {
+    height: auto;
+  }
+  .about .center {
+    height: auto;
+  }
+  .about .center .my__description .description__photo {
+    display: none;
+  }
+  .about .center .my__description .description__text span {
+    font-size: 1.5rem;
+  }
+  .about .center .my__description .description__text p {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,90 @@
+@import "../variables";
+
+.contact {
+  height: 100vh;
+  background: rgb(130, 130, 130);
+  background: linear-gradient(
+    180deg,
+    rgba(130, 130, 130, 1) 0%,
+    rgba(40, 40, 40, 0.9332107843137255) 100%
+  );
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .container__contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      padding: 30px;
+      border-radius: 70px;
+      margin-top: 30px;
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 20px white;
+
+      strong {
+        color: $black-color;
+        font-size: $font-global + 0.5;
+        text-align: center;
+      }
+
+      .contact__social__media {
+        display: flex;
+        gap: 30px;
+        margin-top: 20px;
+
+        a {
+          padding: 5px;
+          border-radius: 50%;
+          transition: 0.3s;
+
+          i {
+            font-size: $font-global + 1.5;
+            color: $black-color;
+            transition: 0.3s;
+          }
+
+          &:hover {
+            box-shadow: 0 0 5px black;
+            background-color: black;
+
+            i {
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .contact {
+    height: auto;
+    padding-bottom: 80px;
+
+    .center {
+      height: auto;
+
+      .container__contact {
+        width: 100%;
+
+        strong {
+          font-size: $font-global;
+        }
+
+        .contact__social__media {
+          a {
+            i {
+              font-size: $font-global + 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

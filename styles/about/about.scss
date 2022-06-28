@@ -1,0 +1,130 @@
+@import "../variables";
+
+.about {
+  height: 100vh;
+  background: rgb(130, 130, 130);
+  background: linear-gradient(
+    180deg,
+    rgba(130, 130, 130, 1) 0%,
+    rgba(40, 40, 40, 0.9332107843137255) 100%
+  );
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    .my__description {
+      display: flex;
+      padding: 20px 0;
+
+      .description__photo {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .my__photo {
+          width: 200px;
+          height: 250px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+
+      .description__text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        color: $black-color;
+        background-color: rgba(255, 255, 255, 0.639);
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px black;
+
+        span {
+          font-size: 2rem;
+          font-weight: $extra-bold;
+          font-family: $nunito;
+        }
+
+        p {
+          font-size: $font-global + 0.3;
+          font-weight: $bold;
+          font-family: $nunito;
+        }
+
+        .skills {
+          display: flex;
+          justify-content: space-evenly;
+          margin-top: 30px;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    .center {
+      .my__description {
+        gap: 20px;
+
+        .description__photo {
+          width: 200px;
+          justify-content: flex-start;
+        }
+
+        .description__text {
+          span {
+            font-size: 2rem - 0.3;
+          }
+
+          p {
+            font-size: $font-global;
+          }
+
+          .skills {
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .about {
+    height: auto;
+
+    .center {
+      height: auto;
+
+      .my__description {
+        .description__photo {
+          display: none;
+        }
+
+        .description__text {
+          span {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: $font-global;
+          }
+        }
+      }
+    }
+  }
+}

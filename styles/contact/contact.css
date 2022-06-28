@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&family=Nunito:wght@400;500;600;700;800&family=RobotoSlab:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap");
+.contact {
+  height: 100vh;
+  background: rgb(130, 130, 130);
+  background: linear-gradient(180deg, rgb(130, 130, 130) 0%, rgba(40, 40, 40, 0.9332107843) 100%);
+}
+.contact .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact .center .container__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 30px;
+  border-radius: 70px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px white;
+}
+.contact .center .container__contact strong {
+  color: #000;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.contact .center .container__contact .contact__social__media {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+.contact .center .container__contact .contact__social__media a {
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.contact .center .container__contact .contact__social__media a i {
+  font-size: 2.5rem;
+  color: #000;
+  transition: 0.3s;
+}
+.contact .center .container__contact .contact__social__media a:hover {
+  box-shadow: 0 0 5px black;
+  background-color: black;
+}
+.contact .center .container__contact .contact__social__media a:hover i {
+  color: #fff;
+}
+
+@media (max-width: 425px) {
+  .contact {
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .contact .center {
+    height: auto;
+  }
+  .contact .center .container__contact {
+    width: 100%;
+  }
+  .contact .center .container__contact strong {
+    font-size: 1rem;
+  }
+  .contact .center .container__contact .contact__social__media a i {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

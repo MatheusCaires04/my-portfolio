@@ -1,0 +1,15 @@
+@import "../variables";
+
+footer {
+  width: 100%;
+  background-color: $black-color;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+  span {
+    font-size: $font-global - 0.3;
+    color: $white-color;
+    text-align: center;
+  }
+}
