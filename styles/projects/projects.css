@@ -77,9 +77,13 @@
     height: auto;
   }
   .projects .center .my__projects {
+    padding: 20px 20px;
     flex-direction: column;
     height: auto;
     overflow: none;
+  }
+  .projects .center .my__projects::-webkit-scrollbar {
+    display: none;
   }
   .projects .center .my__projects .link__site {
     width: 100%;

@@ -94,9 +94,13 @@
       height: auto;
 
       .my__projects {
+        padding: 20px 20px;
         flex-direction: column;
         height: auto;
         overflow: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
 
         .link__site {
           width: 100%;
