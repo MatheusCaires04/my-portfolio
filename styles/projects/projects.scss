@@ -95,6 +95,8 @@
 
       .my__projects {
         flex-direction: column;
+        height: auto;
+        overflow: none;
 
         .link__site {
           width: 100%;

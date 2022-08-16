@@ -78,6 +78,8 @@
   }
   .projects .center .my__projects {
     flex-direction: column;
+    height: auto;
+    overflow: none;
   }
   .projects .center .my__projects .link__site {
     width: 100%;
