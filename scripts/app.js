@@ -131,3 +131,8 @@ particlesJS(
     },
   }
 );
+
+const tamanho = document.querySelector(".link__site");
+const t = tamanho.clientHeight;
+
+console.log(t);
